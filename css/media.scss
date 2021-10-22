@@ -1,0 +1,333 @@
+@import "veriables";
+
+@media (max-width: 1200px) {
+  .container {
+    padding: 0 40px;
+  }
+  .header {
+    padding: 36px 0;
+  }
+  .hero {
+    background: url(../images/hero-bg.png) right -168px center/cover no-repeat;
+  }
+  .hero__card {
+    width: 100%;
+    height: 100%;
+  }
+  .why-choose__card {
+    width: 100%;
+    height: 100%;
+  }
+  .header__menu-button {
+    right: 25px;
+  }
+  .business-service__play-button {
+    top: 155px;
+  }
+  .business-service__video-box {
+    width: 100%;
+    height: 100%;
+  }
+  .business-service__content-box {
+    width: 100%;
+  }
+  .row {
+    flex-wrap: wrap;
+    margin: 0 -10px;
+  }
+  .clients__row {
+    align-items: center;
+    margin: 0px -10px 25px;
+  }
+  .col-2 {
+    width: 33.333%;
+  }
+}
+
+
+@media (max-width: 992px) {
+
+
+  .hero__card {
+    padding: 28px 18px;
+  }
+
+  .why-choose {
+    padding: 80px 0;
+  }
+  .why-choose__col-3 {
+    width: 50%;
+    padding: 10px 10px;
+  }
+  .practice {
+    padding: 80px 0;
+  }
+  .practice__col-3 {
+    width: 50%;
+    padding: 10px 10px;
+  }
+  .business-service {
+    padding: 80px 0;
+  }
+
+  .subscribe {
+    position: static;
+    width: unset;
+    display: block;
+    text-align: center;
+    height: 212px;
+    &__title {
+      display: inline-block;
+      margin-bottom: 30px;
+    }
+    &__search {
+      display: flex;
+      background: none;
+      border: none;
+      border-radius: 0;
+      justify-content: center;
+    }
+
+    &__input {
+      border-radius: 5px 0 0 5px;
+      background: white;
+    }
+  }
+
+
+  .clients-bg {
+    display: none;
+  }
+
+  .touch {
+    &__row {
+      flex-wrap: wrap;
+    }
+
+    &__col-4 {
+      width: 100%;
+    }
+
+    &__card_color {
+      transform: none;
+      margin-bottom: 20px;
+    }
+
+    &__card {
+      margin-bottom: 20px;
+    }
+  }
+
+  .col-4 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .body-non-scroll {
+    overflow: hidden;
+  }
+  .header {
+    background: #F7F7F7;
+
+    &__list {
+      display: none;
+    }
+
+    &__li {
+      margin: 0 0 30px;
+    }
+
+    &__links {
+      font-size: 30px;
+      line-height: 45px;
+      color: $grey;
+    }
+
+    &__search-btn {
+      display: block;
+    }
+
+    &__shopping-btn {
+      display: block;
+    }
+  }
+
+  .mobile-menu {
+    display: flex;
+    position: fixed;
+    top: 104px;
+    left: 0;
+    background: #F7F7F7;
+    width: 100vw;
+    height: 430px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 15;
+  }
+  .hero {
+    background: url(../images/hero-bg.png) left -338px center/cover no-repeat;
+
+    &__content {
+      text-align: center;
+      width: 100%;
+    }
+
+    &__text {
+      width: 100%;
+    }
+
+    &__col-4 {
+      width: 328px;
+      height: 210px;
+      margin: 0 auto 15px;
+    }
+  }
+  .why-choose {
+    padding: 80px 0 0;
+  }
+  .business-service__text {
+    margin: 0 auto 30px;
+  }
+  .col-6 {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .business-service__sub-content-box {
+    justify-content: flex-start;
+  }
+  .flex-container {
+    display: block;
+    padding: 0 110px;
+  }
+  .consulting__text {
+    margin-bottom: 50px;
+  }
+  .info {
+    padding: 55px 0;
+  }
+  .social {
+    padding: 25px 0;
+  }
+  .social__links {
+    text-align: unset;
+    padding: 25px 0 0;
+  }
+
+}
+
+
+@media (max-width: 576px) {
+  .flex-container {
+    padding: 0 87px;
+  }
+  .subscribe {
+    padding: 20px;
+  }
+  .subscribe__title {
+    font-size: 22px;
+    line-height: 22px;
+  }
+  .business-service__play-button {
+    top: 100px;
+  }
+
+  .touch__card {
+    padding: 20px;
+    max-width: 338px;
+    margin: 0 auto 30px;
+
+    &_color {
+      padding: 20px;
+      height: unset;
+    }
+  }
+}
+
+
+  @media (max-width: 480px) {
+    .flex-container {
+      padding: 0 30px;
+    }
+    .header__search-btn {
+      right: 60px;
+    }
+    .header__shopping-btn {
+      right: 100px;
+    }
+    .hero {
+      &__title {
+        font-size: 40px;
+        line-height: 51px;
+        margin-bottom: 15px;
+      }
+
+      &__text {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 20px;
+      }
+
+      &__button {
+        margin-bottom: 30px;
+      }
+
+      &__card-title {
+        font-size: 18px;
+        line-height: 24px;
+      }
+    }
+    .title {
+      font-size: 24px;
+      line-height: 32px;
+    }
+    .why-choose__col-3 {
+      width: 100%;
+    }
+    .practice__col-3 {
+      width: 100%;
+    }
+
+    .business-service {
+      padding: 30px 0;
+    }
+    .business-service__play-button {
+        top: 22px;
+        padding: 30px;
+      }
+    .col-2 {
+      width: 100%;
+    }
+    .subscribe {
+      height: 153px;
+      &__title {
+        font-size: 18px;
+        line-height: 18px;
+      }
+      &__input {
+        padding: 10px;
+      }
+      &__button {
+        padding: 10px;
+      }
+    }
+
+    .touch {
+      padding: 30px;
+
+      &__text {
+        width: 100%;
+        margin: 0 auto 30px;
+      }
+    }
+    .consulting__button {
+      padding: 10px 20px;
+      line-height: 20px;
+    }
+
+  }
+
+
+
+
